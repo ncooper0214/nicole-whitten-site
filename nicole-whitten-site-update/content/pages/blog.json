@@ -1,0 +1,25 @@
+{
+  "section_01": {
+    "text_01": "Blog",
+    "text_02": "Notes on *words that work*",
+    "text_03": "Practical thinking on copywriting, editing, content strategy and leading creative teams."
+  },
+  "section_02": {
+    "text_01": "All",
+    "text_02": "Copywriting",
+    "text_03": "Editing",
+    "text_04": "Content strategy",
+    "text_05": "AI and automation",
+    "text_06": "Leadership"
+  },
+  "section_03": {
+    "text_01": "Get new posts *by email*",
+    "text_02": "One thoughtful email when there's something worth reading. No spam, unsubscribe anytime.",
+    "text_03": "Email address",
+    "text_04": "Subscribe"
+  },
+  "seo": {
+    "page_title": "Blog — Nicole Whitten",
+    "description": "Notes on words that work: copywriting, editing, content strategy, AI, and leading creative teams."
+  }
+}

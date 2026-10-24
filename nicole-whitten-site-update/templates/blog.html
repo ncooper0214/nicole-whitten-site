@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="%%c:blog/seo/description%%">
+<meta property="og:title" content="%%c:blog/seo/page_title%%">
+<meta property="og:description" content="%%c:blog/seo/description%%">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/photo-original.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231E1A2E%22/%3E%3Ctext x=%2232%22 y=%2244%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2232%22 font-style=%22italic%22 fill=%22%23FFA987%22%3ENW%3C/text%3E%3C/svg%3E">
+
+<title>%%c:blog/seo/page_title%%</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1E1A2E}
+a{color:#F3EEFF;text-decoration:none}a:hover{color:#FFA987}
+input{font:inherit}
+input:focus{outline:2px solid #C3B5FF;outline-offset:2px}
+
+@keyframes nw-up{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+@keyframes nw-blur{from{opacity:0;filter:blur(12px);translate:0 24px}to{opacity:1;filter:blur(0);translate:0 0}}
+@keyframes nw-wipe{from{clip-path:inset(0 100% 0 0 round 20px);opacity:.4}to{clip-path:inset(0 0 0 0 round 20px);opacity:1}}
+@keyframes nw-pop{from{opacity:0;scale:.86}to{opacity:1;scale:1}}
+@keyframes nw-side{from{opacity:0;translate:-40px 0}to{opacity:1;translate:0 0}}
+@keyframes nw-drift{from{translate:0 -28px}to{translate:0 28px}}
+@keyframes nw-track{from{letter-spacing:.35em;opacity:0}to{opacity:1}}
+@keyframes nw-grow{from{scale:0 1}to{scale:1 1}}
+@keyframes nw-draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes nw-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes nw-marquee{to{transform:translateX(-50%)}}
+.nw-hero>*{animation:nw-up .9s cubic-bezier(.2,.7,.2,1) both}
+.nw-hero>:nth-child(2){animation-delay:.12s}.nw-hero>:nth-child(3){animation-delay:.24s}.nw-hero>:nth-child(4){animation-delay:.36s}.nw-hero>:nth-child(5){animation-delay:.48s}.nw-hero>:nth-child(6){animation-delay:.6s}
+img.hero-art{animation:nw-draw 2.6s .4s cubic-bezier(.65,0,.35,1) both,nw-float 8s 3s ease-in-out infinite}
+.nw-card{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.nw-card:hover{transform:translateY(-6px)}
+.nw-card img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.nw-card:hover img{transform:scale(1.05)}
+a[style*="border-radius: 999px"]{transition:transform .3s cubic-bezier(.2,.7,.2,1),filter .3s}
+a[style*="border-radius: 999px"]:hover{transform:translateY(-2px);filter:brightness(1.08)}
+nav a{transition:color .25s}
+.nw-track{animation:nw-marquee 32s linear infinite}.nw-marquee:hover .nw-track{animation-play-state:paused}
+@supports (animation-timeline: view()){
+.nw-rv,section p,article p,section li,article li,blockquote,dl>div,footer>div>*{animation:nw-up linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+h2.nw-rv{animation-name:nw-blur;animation-range:entry 0% entry 55%}
+.nw-card.nw-rv{animation-name:nw-pop}
+section li{animation-name:nw-side}
+[style*="text-transform: uppercase"]{animation:nw-track linear both;animation-timeline:view();animation-range:entry 0% entry 50%}
+.nw-fig img{animation:nw-wipe linear both;animation-timeline:view();animation-range:entry 5% cover 45%}
+img[style*="height: 560px"]{animation:nw-drift linear both;animation-timeline:view();animation-range:cover}
+[style*="font-size: 32px; color: #FFA987"],[style*="font-size: 56px; color: #FFA987"],[style*="font-size: 64px; color: #FFA987"]{animation:nw-pop linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
+.nw-hero>*{animation-timeline:auto}
+}
+@supports (animation-timeline: scroll()){.nw-progress{position:fixed;z-index:60;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C3B5FF,#FFA987);transform-origin:0 50%;animation:nw-grow linear both;animation-timeline:scroll(root)}}
+@media (max-width:640px){
+h2[style*="font-size: 64px"]{font-size:44px!important}h2[style*="font-size: 56px"]{font-size:40px!important}h2[style*="font-size: 48px"]{font-size:36px!important}
+[style*="padding: 56px 48px"],[style*="padding: 64px 48px"],[style*="padding: 48px 40px"],[style*="padding: 40px 48px"],[style*="padding: 48px;"]{padding:32px 24px!important}
+header nav{gap:6px 16px!important;font-size:14px!important}
+.nw-fig{margin:16px 0!important}
+}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<div style="background: #1E1A2E; color: #F3EEFF; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh;">
+
+<header id="top" style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="index.html" style="font-family: 'Instrument Serif', serif; font-size: 28px; line-height: 1; color: #F3EEFF;">Nicole <i style="color: #FFA987">Whitten</i><span style="color: #C3B5FF;">, MBA, MA</span></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px;">
+<a href="work.html">Work</a>
+<a href="writing.html">Writing</a>
+<a href="services.html">Services</a>
+<a href="blog.html" aria-current="page" style="color: #C3B5FF; text-decoration: underline; text-underline-offset: 6px;">Blog</a>
+<a href="about.html">About</a>
+<a href="contact.html" style="padding: 10px 20px; border-radius: 999px; border: 1px solid #4A4266; color: #F3EEFF;">Get in touch</a>
+</nav>
+</header>
+
+<section class="nw-hero" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 56px; display: flex; flex-direction: column; gap: 20px;">
+<div style="font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: #C3B5FF;">%%c:blog/section_01/text_01%%</div>
+<h1 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(56px, 7vw, 96px); line-height: 1;">%%c:blog/section_01/text_02%%</h1>
+<p style="margin: 0; max-width: 620px; font-size: 19px; color: #B7AECB;">%%c:blog/section_01/text_03%%</p>
+</section>
+
+<section aria-label="Featured post" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 64px;">
+%%featured%%
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px;">
+<div role="group" aria-label="Filter posts" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+<button type="button" aria-pressed="true" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: #C3B5FF; color: #1E1A2E; border: 1px solid #C3B5FF;">%%c:blog/section_02/text_01%%</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">%%c:blog/section_02/text_02%%</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">%%c:blog/section_02/text_03%%</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">%%c:blog/section_02/text_04%%</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">%%c:blog/section_02/text_05%%</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">%%c:blog/section_02/text_06%%</button>
+
+</div>
+</section>
+
+<section aria-label="Posts" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 112px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px;">
+%%cards%%
+</div>
+</section>
+
+<section aria-label="Subscribe" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 112px;">
+<div class="nw-rv" style="border-radius: 24px; background: #FFA987; color: #2A1006; padding: 56px 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px 64px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<h2 class="nw-rv" style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 48px; line-height: 1.02;">%%c:blog/section_03/text_01%%</h2>
+<p style="margin: 0; color: #4A1E0C;">%%c:blog/section_03/text_02%%</p>
+</div>
+
+
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<label for="b-email" style="font-size: 14px; color: #4A1E0C;">%%c:blog/section_03/text_03%%</label>
+<form action="https://formsubmit.co/%%email%%" method="POST" style="display: flex; flex-wrap: wrap; gap: 10px;">
+<input type="hidden" name="_subject" value="New blog subscriber">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input id="b-email" name="email" required type="email" autocomplete="email" placeholder="jordan@company.com" style="flex: 1 1 220px; height: 50px; box-sizing: border-box; padding: 0 18px; border-radius: 999px; border: 1px solid #C26A48; background: #FFE6DB; color: #2A1006;">
+<button type="submit" style="min-height: 50px; padding: 0 26px; border: 0; border-radius: 999px; background: #1E1A2E; color: #F3EEFF; font: inherit; font-weight: 600; cursor: pointer;">%%c:blog/section_03/text_04%%</button>
+</form>
+
+</div>
+
+</div>
+</section>
+
+<footer style="background: #17142A; border-top: 1px solid #332C4A;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #9A90B8;">
+<a href="index.html" style="font-family: 'Instrument Serif', serif; font-size: 26px; color: #F3EEFF;">Nicole <i style="color: #FFA987">Whitten</i><span style="color: #C3B5FF;">, MBA, MA</span></a>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px;">
+<a href="work.html" style="color: #B7AECB;">Work</a>
+<a href="writing.html" style="color: #B7AECB;">Writing</a>
+<a href="services.html" style="color: #B7AECB;">Services</a>
+<a href="blog.html" style="color: #B7AECB;">Blog</a>
+<a href="about.html" style="color: #B7AECB;">About</a>
+<a href="contact.html" style="color: #B7AECB;">Contact</a>
+</nav>
+<span>© 2026 Nicole Whitten</span>
+</div>
+</footer>
+
+</div>
+
+
+
+
+<script>
+document.querySelectorAll('[role="group"][aria-label^="Filter"]').forEach(function(g){
+  var btns=[].slice.call(g.querySelectorAll('button'));
+  var sec=g.closest('section'); var next=sec&&sec.nextElementSibling; var grid=next&&next.querySelector('div');
+  if(!grid)return;
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    var label=b.textContent.trim();
+    btns.forEach(function(x){var on=x===b;x.setAttribute('aria-pressed',on?'true':'false');x.style.background=on?'#C3B5FF':'transparent';x.style.color=on?'#1E1A2E':'#F3EEFF';x.style.borderColor=on?'#C3B5FF':'#4A4266';});
+    [].slice.call(grid.children).forEach(function(c){
+      var tags=[].slice.call(c.querySelectorAll('span')).map(function(s){return s.textContent.trim();});
+      c.style.display=(label==='All'||tags.indexOf(label)>-1)?'':'none';
+    });
+  });});
+});
+</script>
+</body></html>

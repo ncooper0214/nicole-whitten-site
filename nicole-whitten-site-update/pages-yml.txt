@@ -1,0 +1,3593 @@
+# Pages CMS settings. Each "Page" entry edits the words on that page.
+# Tip shown to editors: wrap words in *asterisks* for the accent style, **double asterisks** for bold.
+media:
+  input: public/img
+  output: /img
+content:
+- name: posts
+  label: Blog posts
+  type: collection
+  path: content/posts
+  format: yaml-frontmatter
+  filename: '{primary}.md'
+  view:
+    primary: title
+    fields:
+    - title
+    - category
+    - date
+    sort:
+    - date
+    - title
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+    description: 'Wrap a word or phrase in *asterisks* to make it peach and italic, like: The edit is where *copy gets good*'
+  - name: category
+    label: Category
+    type: select
+    options:
+      values:
+      - Copywriting
+      - Editing
+      - Content strategy
+      - AI and automation
+      - Leadership
+  - name: date
+    label: Publish date
+    type: date
+    options:
+      format: yyyy-MM-dd
+  - name: intro
+    label: Intro line
+    type: text
+    description: One or two sentences shown under the title and on the blog card.
+  - name: image
+    label: Card image
+    type: image
+    description: Shown on the Blog page card (and as the featured image when this is your newest post).
+  - name: image_alt
+    label: Card image description
+    type: string
+    description: A short description of the image for screen readers.
+  - name: draft
+    label: Hide this post (draft)
+    type: boolean
+  - name: body
+    label: Post
+    type: rich-text
+    options:
+      format: markdown
+- name: page_index
+  label: Page · Home
+  type: file
+  path: content/pages/index.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Work that makes people stop scrolling and start …
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+    - name: text_04
+      label: Button or link text 1
+      type: string
+    - name: text_05
+      label: Button or link text 2
+      type: string
+  - name: section_02
+    label: 02 · What I do
+    type: object
+    fields:
+    - name: text_01
+      label: Tag 1
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Tag 2
+      type: string
+    - name: text_05
+      label: Title 2
+      type: string
+    - name: text_06
+      label: Paragraph 2
+      type: text
+    - name: text_07
+      label: Tag 3
+      type: string
+    - name: text_08
+      label: Title 3
+      type: string
+    - name: text_09
+      label: Paragraph 3
+      type: string
+  - name: section_03
+    label: 03 · Selected work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text
+      type: string
+    - name: text_03
+      label: Tag 1
+      type: string
+    - name: text_04
+      label: Tag 2
+      type: string
+    - name: text_05
+      label: Title 1
+      type: string
+    - name: text_06
+      label: Paragraph 1
+      type: text
+    - name: text_07
+      label: Stat 1
+      type: string
+    - name: text_08
+      label: Stat label 1
+      type: string
+    - name: text_09
+      label: Stat 2
+      type: string
+    - name: text_10
+      label: Stat label 2
+      type: string
+    - name: text_11
+      label: Tag 3
+      type: string
+    - name: text_12
+      label: Tag 4
+      type: string
+    - name: text_13
+      label: Title 2
+      type: string
+    - name: text_14
+      label: Paragraph 2
+      type: string
+    - name: text_15
+      label: Stat 3
+      type: string
+    - name: text_16
+      label: Stat label 3
+      type: string
+    - name: text_17
+      label: Stat 4
+      type: string
+    - name: text_18
+      label: Stat label 4
+      type: string
+    - name: text_19
+      label: Tag 5
+      type: string
+    - name: text_20
+      label: Tag 6
+      type: string
+    - name: text_21
+      label: Title 3
+      type: string
+    - name: text_22
+      label: Paragraph 3
+      type: string
+    - name: text_23
+      label: Stat 5
+      type: string
+    - name: text_24
+      label: Stat label 5
+      type: string
+    - name: text_25
+      label: Stat 6
+      type: string
+    - name: text_26
+      label: Stat label 6
+      type: string
+  - name: section_04
+    label: 04 · Testimonial
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: string
+    - name: text_03
+      label: Button or link text
+      type: string
+  - name: section_05
+    label: 05 · Writing samples
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 1
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Button or link text 1
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 2
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+    - name: text_10
+      label: Button or link text 2
+      type: string
+    - name: text_11
+      label: Text 5
+      type: string
+    - name: text_12
+      label: Title 3
+      type: string
+    - name: text_13
+      label: Text 6
+      type: string
+    - name: text_14
+      label: Button or link text 3
+      type: string
+    - name: text_15
+      label: Text 7
+      type: string
+    - name: text_16
+      label: Title 4
+      type: string
+    - name: text_17
+      label: Text 8
+      type: string
+    - name: text_18
+      label: Button or link text 4
+      type: string
+  - name: section_06
+    label: 06 · Hi, I'm Nicole. I like a well-crafted sentence a…
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Section heading
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: string
+    - name: text_05
+      label: Button or link text
+      type: string
+  - name: section_07
+    label: 07 · Experience
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: string
+    - name: text_03
+      label: Button or link text
+      type: string
+    - name: text_04
+      label: Text 1
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Text 4
+      type: string
+    - name: text_08
+      label: Text 5
+      type: string
+    - name: text_09
+      label: Text 6
+      type: string
+    - name: text_10
+      label: Text 7
+      type: string
+    - name: text_11
+      label: Text 8
+      type: string
+    - name: text_12
+      label: Text 9
+      type: string
+    - name: text_13
+      label: Text 10
+      type: string
+    - name: text_14
+      label: Text 11
+      type: string
+    - name: text_15
+      label: Text 12
+      type: string
+    - name: text_16
+      label: Text 13
+      type: string
+    - name: text_17
+      label: Text 14
+      type: string
+    - name: text_18
+      label: Text 15
+      type: string
+  - name: section_08
+    label: 08 · Need words that work? Let's talk.
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_work
+  label: Page · Work
+  type: file
+  path: content/pages/work.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Work that changed the numbers
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: string
+  - name: section_02
+    label: 02 · Filter buttons
+    type: object
+    fields:
+    - name: text_01
+      label: Button text 1
+      type: string
+    - name: text_02
+      label: Button text 2
+      type: string
+    - name: text_03
+      label: Button text 3
+      type: string
+    - name: text_04
+      label: Button text 4
+      type: string
+    - name: text_05
+      label: Button text 5
+      type: string
+    description: Filters match tags by exact wording. If you rename a filter button, rename the matching tags too (and vice versa).
+  - name: section_03
+    label: 03 · Project cards
+    type: object
+    fields:
+    - name: text_01
+      label: Tag 1
+      type: string
+    - name: text_02
+      label: Tag 2
+      type: string
+    - name: text_03
+      label: Title 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 1
+      type: string
+    - name: text_06
+      label: Stat label 1
+      type: string
+    - name: text_07
+      label: Text 2
+      type: string
+    - name: text_08
+      label: Text 3
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+    - name: text_10
+      label: Tag 3
+      type: string
+    - name: text_11
+      label: Tag 4
+      type: string
+    - name: text_12
+      label: Title 2
+      type: string
+    - name: text_13
+      label: Paragraph 2
+      type: text
+    - name: text_14
+      label: Stat 2
+      type: string
+    - name: text_15
+      label: Stat label 5
+      type: string
+    - name: text_16
+      label: Text 6
+      type: string
+    - name: text_17
+      label: Text 7
+      type: string
+    - name: text_18
+      label: Text 8
+      type: string
+    - name: text_19
+      label: Tag 5
+      type: string
+    - name: text_20
+      label: Tag 6
+      type: string
+    - name: text_21
+      label: Title 3
+      type: string
+    - name: text_22
+      label: Paragraph 3
+      type: string
+    - name: text_23
+      label: Stat 3
+      type: string
+    - name: text_24
+      label: Stat label 9
+      type: string
+    - name: text_25
+      label: Text 10
+      type: string
+    - name: text_26
+      label: Text 11
+      type: string
+    - name: text_27
+      label: Text 12
+      type: string
+    - name: text_28
+      label: Tag 7
+      type: string
+    - name: text_29
+      label: Tag 8
+      type: string
+    - name: text_30
+      label: Title 4
+      type: string
+    - name: text_31
+      label: Paragraph 4
+      type: text
+    - name: text_32
+      label: Stat 4
+      type: string
+    - name: text_33
+      label: Stat label 13
+      type: string
+    - name: text_34
+      label: Text 14
+      type: string
+    - name: text_35
+      label: Text 15
+      type: string
+    - name: text_36
+      label: Text 16
+      type: string
+    - name: text_37
+      label: Tag 9
+      type: string
+    - name: text_38
+      label: Tag 10
+      type: string
+    - name: text_39
+      label: Title 5
+      type: string
+    - name: text_40
+      label: Paragraph 5
+      type: string
+    - name: text_41
+      label: Stat 5
+      type: string
+    - name: text_42
+      label: Stat label 17
+      type: string
+    - name: text_43
+      label: Text 18
+      type: string
+    - name: text_44
+      label: Text 19
+      type: string
+    - name: text_45
+      label: Text 20
+      type: string
+    - name: text_46
+      label: Tag 11
+      type: string
+    - name: text_47
+      label: Tag 12
+      type: string
+    - name: text_48
+      label: Title 6
+      type: string
+    - name: text_49
+      label: Paragraph 6
+      type: string
+    - name: text_50
+      label: Stat 6
+      type: string
+    - name: text_51
+      label: Stat label 21
+      type: string
+    - name: text_52
+      label: Text 22
+      type: string
+    - name: text_53
+      label: Text 23
+      type: string
+    - name: text_54
+      label: Text 24
+      type: string
+    description: Filters match tags by exact wording. If you rename a filter button, rename the matching tags too (and vice versa).
+  - name: section_04
+    label: 04 · Want the full story behind a project? Let's talk…
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text 1
+      type: string
+    - name: text_03
+      label: Button or link text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_adoreal
+  label: 'Page · Case study: Adoreal'
+  type: file
+  path: content/pages/case-study-adoreal.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Leading marketing for a platform and the practic…
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Tag 3
+      type: string
+    - name: text_05
+      label: Page headline
+      type: string
+    - name: text_06
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: string
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 4
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+  - name: section_04
+    label: 04 · The challenge
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · From strategy to revenue
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Stat 1
+      type: string
+    - name: text_04
+      label: Paragraph 2
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Paragraph 3
+      type: text
+    - name: text_07
+      label: Stat 3
+      type: string
+    - name: text_08
+      label: Paragraph 4
+      type: text
+    - name: text_09
+      label: Stat 4
+      type: string
+    - name: text_10
+      label: Paragraph 5
+      type: text
+  - name: section_06
+    label: 06 · Everything I oversee
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Paragraph 2
+      type: text
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Paragraph 3
+      type: text
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Paragraph 4
+      type: text
+    - name: text_09
+      label: Text 4
+      type: string
+    - name: text_10
+      label: Paragraph 5
+      type: text
+    - name: text_11
+      label: Text 5
+      type: string
+    - name: text_12
+      label: Paragraph 6
+      type: text
+    - name: text_13
+      label: Text 6
+      type: string
+    - name: text_14
+      label: Paragraph 7
+      type: text
+  - name: section_07
+    label: 07 · What the team delivered across the portfolio
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Section heading
+      type: string
+    - name: text_03
+      label: Title 1
+      type: string
+    - name: text_04
+      label: Text 1
+      type: string
+    - name: text_05
+      label: Title 2
+      type: string
+    - name: text_06
+      label: Text 2
+      type: string
+    - name: text_07
+      label: Title 3
+      type: string
+    - name: text_08
+      label: Text 3
+      type: string
+    - name: text_09
+      label: Title 4
+      type: string
+    - name: text_10
+      label: Text 4
+      type: string
+    - name: text_11
+      label: Title 5
+      type: string
+    - name: text_12
+      label: Text 5
+      type: string
+    - name: text_13
+      label: Title 6
+      type: string
+    - name: text_14
+      label: Text 6
+      type: string
+    - name: text_15
+      label: Title 7
+      type: string
+    - name: text_16
+      label: Text 7
+      type: string
+    - name: text_17
+      label: Title 8
+      type: string
+    - name: text_18
+      label: Text 8
+      type: string
+  - name: section_08
+    label: 08 · When our practices grow, so do we
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Section heading
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+    - name: text_04
+      label: Text 1
+      type: string
+    - name: text_05
+      label: Text 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Text 4
+      type: text
+    - name: text_08
+      label: Text 5
+      type: string
+    - name: text_09
+      label: Text 6
+      type: text
+    - name: text_10
+      label: Text 7
+      type: string
+    - name: text_11
+      label: Text 8
+      type: string
+    - name: text_12
+      label: Text 9
+      type: string
+    - name: text_13
+      label: Text 10
+      type: string
+  - name: section_09
+    label: 09 · An automation for every channel
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Section heading
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 1
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 2
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+    - name: text_08
+      label: Text 3
+      type: string
+    - name: text_09
+      label: Paragraph 4
+      type: string
+    - name: text_10
+      label: Text 4
+      type: string
+    - name: text_11
+      label: Paragraph 5
+      type: text
+    - name: text_12
+      label: Text 5
+      type: string
+    - name: text_13
+      label: Paragraph 6
+      type: text
+    - name: text_14
+      label: Text 6
+      type: string
+    - name: text_15
+      label: Paragraph 7
+      type: text
+  - name: section_10
+    label: 10 · Leading the team
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: text
+    - name: text_06
+      label: Text 4
+      type: text
+    - name: text_07
+      label: Text 5
+      type: string
+    - name: text_08
+      label: Quote
+      type: string
+    - name: text_09
+      label: Text 6
+      type: string
+  - name: section_11
+    label: 11 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+    - name: text_08
+      label: Text 4
+      type: string
+    - name: text_09
+      label: Paragraph 4
+      type: text
+  - name: section_12
+    label: 12 · In their words
+    type: object
+    fields:
+    - name: text_01
+      label: Quote 1
+      type: string
+    - name: text_02
+      label: Caption 1
+      type: string
+    - name: text_03
+      label: Quote 2
+      type: string
+    - name: text_04
+      label: Caption 2
+      type: string
+    - name: text_05
+      label: Quote 3
+      type: string
+    - name: text_06
+      label: Caption 3
+      type: string
+  - name: section_13
+    label: 13 · The work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Title 2
+      type: string
+    - name: text_04
+      label: Paragraph
+      type: string
+    - name: text_05
+      label: Text
+      type: string
+  - name: section_14
+    label: 14 · What I've learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: text
+  - name: section_15
+    label: 15 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_human
+  label: 'Page · Case study: HUMAN'
+  type: file
+  path: content/pages/case-study-human.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Giving HUMAN Security a voice as sharp as its te…
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Tag 3
+      type: string
+    - name: text_05
+      label: Page headline
+      type: string
+    - name: text_06
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: text
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 4
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+  - name: section_04
+    label: 04 · The challenge
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · My role and leadership
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: string
+    - name: text_06
+      label: Text 4
+      type: string
+  - name: section_06
+    label: 06 · The insight
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+  - name: section_07
+    label: 07 · The approach
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+  - name: section_08
+    label: 08 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+  - name: section_09
+    label: 09 · The work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Title 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: string
+    - name: text_06
+      label: Text 1
+      type: string
+    - name: text_07
+      label: Stat
+      type: string
+    - name: text_08
+      label: Title 3
+      type: string
+    - name: text_09
+      label: Paragraph 3
+      type: string
+    - name: text_10
+      label: Text 2
+      type: string
+    - name: text_11
+      label: Title 4
+      type: string
+    - name: text_12
+      label: Title 5
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: string
+    - name: text_14
+      label: Text 3
+      type: string
+  - name: section_10
+    label: 10 · Testimonial
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: string
+  - name: section_11
+    label: 11 · What I learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: text
+  - name: section_12
+    label: 12 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_meta
+  label: 'Page · Case study: Meta'
+  type: file
+  path: content/pages/case-study-meta.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Helping 30M small businesses find their next ste…
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Page headline
+      type: string
+    - name: text_05
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: string
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 4
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+  - name: section_04
+    label: 04 · The challenge
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · My role and leadership
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: string
+    - name: text_06
+      label: Text 4
+      type: string
+  - name: section_06
+    label: 06 · The approach
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+  - name: section_07
+    label: 07 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+  - name: section_08
+    label: 08 · What I learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: text
+  - name: section_09
+    label: 09 · Testimonial
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: string
+  - name: section_10
+    label: 10 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_nielsen
+  label: 'Page · Case study: Nielsen'
+  type: file
+  path: content/pages/case-study-nielsen.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Long-form content that ranks and sells
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Page headline
+      type: string
+    - name: text_05
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: string
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+  - name: section_04
+    label: 04 · The challenge
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · My role and focus
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: string
+    - name: text_06
+      label: Text 4
+      type: string
+  - name: section_06
+    label: 06 · The approach
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+  - name: section_07
+    label: 07 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+  - name: section_08
+    label: 08 · The work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: string
+    - name: text_03
+      label: Title 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: string
+    - name: text_06
+      label: Text 1
+      type: string
+    - name: text_07
+      label: Stat 1
+      type: string
+    - name: text_08
+      label: Title 3
+      type: string
+    - name: text_09
+      label: Paragraph 3
+      type: string
+    - name: text_10
+      label: Text 2
+      type: string
+    - name: text_11
+      label: Title 4
+      type: string
+    - name: text_12
+      label: Title 5
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: string
+    - name: text_14
+      label: Text 3
+      type: string
+    - name: text_15
+      label: Stat 2
+      type: string
+    - name: text_16
+      label: Title 6
+      type: string
+    - name: text_17
+      label: Paragraph 5
+      type: string
+    - name: text_18
+      label: Text 4
+      type: string
+    - name: text_19
+      label: Title 7
+      type: string
+    - name: text_20
+      label: Title 8
+      type: string
+    - name: text_21
+      label: Paragraph 6
+      type: string
+    - name: text_22
+      label: Text 5
+      type: string
+    - name: text_23
+      label: Title 9
+      type: string
+    - name: text_24
+      label: Title 10
+      type: string
+    - name: text_25
+      label: Paragraph 7
+      type: string
+    - name: text_26
+      label: Text 6
+      type: string
+  - name: section_09
+    label: 09 · What I learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: text
+  - name: section_10
+    label: 10 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_xpo
+  label: 'Page · Case study: XPO'
+  type: file
+  path: content/pages/case-study-xpo.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Proposal content that raised close rates by up t…
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Tag 3
+      type: string
+    - name: text_05
+      label: Page headline
+      type: string
+    - name: text_06
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: string
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 4
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+  - name: section_04
+    label: 04 · The challenge
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · My role and leadership
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: text
+    - name: text_06
+      label: Text 4
+      type: text
+    - name: text_07
+      label: Text 5
+      type: string
+  - name: section_06
+    label: 06 · The approach
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+  - name: section_07
+    label: 07 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+  - name: section_08
+    label: 08 · The work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Stat
+      type: string
+    - name: text_04
+      label: Title 1
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: string
+    - name: text_06
+      label: Text 1
+      type: string
+    - name: text_07
+      label: Title 2
+      type: string
+    - name: text_08
+      label: Title 3
+      type: string
+    - name: text_09
+      label: Paragraph 3
+      type: string
+    - name: text_10
+      label: Text 2
+      type: string
+  - name: section_09
+    label: 09 · Testimonial
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: string
+  - name: section_10
+    label: 10 · What I learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Paragraph 2
+      type: text
+  - name: section_11
+    label: 11 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_case_study_baunfire
+  label: 'Page · Case study: Baunfire'
+  type: file
+  path: content/pages/case-study-baunfire.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Building a content department from the ground up
+    type: object
+    fields:
+    - name: text_01
+      label: Button or link text
+      type: string
+    - name: text_02
+      label: Tag 1
+      type: string
+    - name: text_03
+      label: Tag 2
+      type: string
+    - name: text_04
+      label: Tag 3
+      type: string
+    - name: text_05
+      label: Page headline
+      type: string
+    - name: text_06
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · Project details
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Text 2
+      type: string
+    - name: text_03
+      label: Text 3
+      type: string
+    - name: text_04
+      label: Text 4
+      type: string
+    - name: text_05
+      label: Text 5
+      type: string
+    - name: text_06
+      label: Text 6
+      type: string
+    - name: text_07
+      label: Text 7
+      type: string
+    - name: text_08
+      label: Text 8
+      type: string
+    - name: text_09
+      label: Text 9
+      type: string
+    - name: text_10
+      label: Text 10
+      type: string
+  - name: section_03
+    label: 03 · Results
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Title 2
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Text 3
+      type: string
+    - name: text_08
+      label: Title 4
+      type: string
+    - name: text_09
+      label: Text 4
+      type: string
+  - name: section_04
+    label: 04 · The opportunity
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_05
+    label: 05 · My role and leadership
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: string
+    - name: text_06
+      label: Text 4
+      type: text
+    - name: text_07
+      label: Text 5
+      type: text
+  - name: section_06
+    label: 06 · How I built it
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+  - name: section_07
+    label: 07 · Navigating the hard parts
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Text 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+  - name: section_08
+    label: 08 · Selected client work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: string
+  - name: section_09
+    label: 09 · HUMAN Security
+    type: object
+    fields:
+    - name: text_01
+      label: Title 1
+      type: string
+    - name: text_02
+      label: Title 2
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: string
+    - name: text_04
+      label: Text 1
+      type: string
+    - name: text_05
+      label: Stat
+      type: string
+    - name: text_06
+      label: Title 3
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: string
+    - name: text_08
+      label: Text 2
+      type: string
+  - name: section_10
+    label: 10 · “Nicole didn’t just step into a role; she built …
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: text
+  - name: section_11
+    label: 11 · “She led strategy and copy for web projects with…
+    type: object
+    fields:
+    - name: text_01
+      label: Quote
+      type: text
+    - name: text_02
+      label: Caption
+      type: string
+  - name: section_12
+    label: 12 · What I learned
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+  - name: section_13
+    label: 13 · The best way to build a writing team is to keep …
+    type: object
+    fields:
+    - name: text_01
+      label: Title
+      type: string
+    - name: text_02
+      label: Paragraph 1
+      type: text
+    - name: text_03
+      label: Paragraph 2
+      type: text
+  - name: section_14
+    label: 14 · Next project
+    type: object
+    fields:
+    - name: text_01
+      label: Text 1
+      type: string
+    - name: text_02
+      label: Title
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_writing
+  label: Page · Writing page
+  type: file
+  path: content/pages/writing.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Range, voice, and a little restraint
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+  - name: section_02
+    label: 02 · How access works
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: string
+    - name: text_04
+      label: Stat 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: string
+    - name: text_06
+      label: Stat 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: string
+  - name: section_03
+    label: 03 · Want to see something specific? Just ask.
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text 1
+      type: string
+    - name: text_03
+      label: Button or link text 2
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_services
+  label: Page · Services
+  type: file
+  path: content/pages/services.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Senior copy, editing, and strategy work, with or…
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+    - name: text_04
+      label: Button or link text 1
+      type: string
+    - name: text_05
+      label: Button or link text 2
+      type: string
+  - name: section_02
+    label: 02 · Service cards
+    type: object
+    fields:
+    - name: text_01
+      label: Tag 1
+      type: string
+    - name: text_02
+      label: Section heading 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: List item 1
+      type: string
+    - name: text_05
+      label: List item 2
+      type: string
+    - name: text_06
+      label: List item 3
+      type: string
+    - name: text_07
+      label: Tag 2
+      type: string
+    - name: text_08
+      label: Section heading 2
+      type: string
+    - name: text_09
+      label: Paragraph 2
+      type: text
+    - name: text_10
+      label: List item 4
+      type: string
+    - name: text_11
+      label: List item 5
+      type: string
+    - name: text_12
+      label: List item 6
+      type: string
+    - name: text_13
+      label: Tag 3
+      type: string
+    - name: text_14
+      label: Section heading 3
+      type: string
+    - name: text_15
+      label: Paragraph 3
+      type: text
+    - name: text_16
+      label: List item 7
+      type: string
+    - name: text_17
+      label: List item 8
+      type: string
+    - name: text_18
+      label: List item 9
+      type: string
+    - name: text_19
+      label: Tag 4
+      type: string
+    - name: text_20
+      label: Section heading 4
+      type: string
+    - name: text_21
+      label: Paragraph 4
+      type: text
+    - name: text_22
+      label: List item 10
+      type: string
+    - name: text_23
+      label: List item 11
+      type: string
+    - name: text_24
+      label: List item 12
+      type: string
+    - name: text_25
+      label: Tag 5
+      type: string
+    - name: text_26
+      label: Section heading 5
+      type: string
+    - name: text_27
+      label: Paragraph 5
+      type: text
+    - name: text_28
+      label: List item 13
+      type: string
+    - name: text_29
+      label: List item 14
+      type: string
+    - name: text_30
+      label: List item 15
+      type: string
+    - name: text_31
+      label: Tag 6
+      type: string
+    - name: text_32
+      label: Section heading 6
+      type: string
+    - name: text_33
+      label: Paragraph 6
+      type: text
+    - name: text_34
+      label: List item 16
+      type: string
+    - name: text_35
+      label: List item 17
+      type: string
+    - name: text_36
+      label: List item 18
+      type: string
+    - name: text_37
+      label: List item 19
+      type: string
+    - name: text_38
+      label: Tag 7
+      type: string
+    - name: text_39
+      label: Section heading 7
+      type: string
+    - name: text_40
+      label: Paragraph 7
+      type: text
+    - name: text_41
+      label: List item 20
+      type: string
+    - name: text_42
+      label: List item 21
+      type: string
+    - name: text_43
+      label: List item 22
+      type: string
+    - name: text_44
+      label: List item 23
+      type: string
+    - name: text_45
+      label: Tag 8
+      type: string
+    - name: text_46
+      label: Section heading 8
+      type: string
+    - name: text_47
+      label: Paragraph 8
+      type: text
+    - name: text_48
+      label: List item 24
+      type: string
+    - name: text_49
+      label: List item 25
+      type: string
+    - name: text_50
+      label: List item 26
+      type: string
+    - name: text_51
+      label: List item 27
+      type: string
+  - name: section_03
+    label: 03 · How fractional works
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: string
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: string
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: string
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: string
+  - name: section_04
+    label: 04 · What people say
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Quote 1
+      type: text
+    - name: text_03
+      label: Caption 1
+      type: string
+    - name: text_04
+      label: Quote 2
+      type: text
+    - name: text_05
+      label: Caption 2
+      type: string
+    - name: text_06
+      label: Quote 3
+      type: text
+    - name: text_07
+      label: Caption 3
+      type: string
+    - name: text_08
+      label: Quote 4
+      type: text
+    - name: text_09
+      label: Caption 4
+      type: string
+  - name: section_05
+    label: 05 · Good questions
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Question 1
+      type: string
+    - name: text_03
+      label: Paragraph 1
+      type: text
+    - name: text_04
+      label: Question 2
+      type: string
+    - name: text_05
+      label: Paragraph 2
+      type: text
+    - name: text_06
+      label: Question 3
+      type: string
+    - name: text_07
+      label: Paragraph 3
+      type: text
+    - name: text_08
+      label: Button or link text 1
+      type: string
+    - name: text_09
+      label: Paragraph 4
+      type: string
+    - name: text_10
+      label: Question 4
+      type: string
+    - name: text_11
+      label: Button or link text 2
+      type: string
+  - name: section_06
+    label: 06 · Have a role or project in mind? Let's talk it th…
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_blog
+  label: Page · Blog page
+  type: file
+  path: content/pages/blog.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Notes on words that work
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: string
+  - name: section_02
+    label: 02 · Filter buttons
+    type: object
+    fields:
+    - name: text_01
+      label: Button text 1
+      type: string
+    - name: text_02
+      label: Button text 2
+      type: string
+    - name: text_03
+      label: Button text 3
+      type: string
+    - name: text_04
+      label: Button text 4
+      type: string
+    - name: text_05
+      label: Button text 5
+      type: string
+    - name: text_06
+      label: Button text 6
+      type: string
+    description: Filters match tags by exact wording. If you rename a filter button, rename the matching tags too (and vice versa).
+  - name: section_03
+    label: 03 · Get new posts by email
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: string
+    - name: text_03
+      label: Form label
+      type: string
+    - name: text_04
+      label: Button text
+      type: string
+    description: Filters match tags by exact wording. If you rename a filter button, rename the matching tags too (and vice versa).
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_about
+  label: Page · About
+  type: file
+  path: content/pages/about.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · I help brands find their words, then make them w…
+    type: object
+    fields:
+    - name: text_01
+      label: Small label
+      type: string
+    - name: text_02
+      label: Page headline
+      type: string
+    - name: text_03
+      label: Paragraph
+      type: text
+    - name: text_04
+      label: Button or link text 1
+      type: string
+    - name: text_05
+      label: Button or link text 2
+      type: string
+  - name: section_02
+    label: 02 · At a glance
+    type: object
+    fields:
+    - name: text_01
+      label: Stat 1
+      type: string
+    - name: text_02
+      label: Stat label 1
+      type: string
+    - name: text_03
+      label: Stat 2
+      type: string
+    - name: text_04
+      label: Stat label 2
+      type: string
+    - name: text_05
+      label: Stat 3
+      type: string
+    - name: text_06
+      label: Stat label 3
+      type: string
+    - name: text_07
+      label: Stat 4
+      type: string
+    - name: text_08
+      label: Stat label 4
+      type: string
+  - name: section_03
+    label: 03 · How I write, edit, and lead
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Title 1
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Title 2
+      type: string
+    - name: text_06
+      label: Text 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Title 3
+      type: string
+    - name: text_09
+      label: Text 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+  - name: section_04
+    label: 04 · My experience extends beyond copy
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Stat 1
+      type: string
+    - name: text_03
+      label: Stat label 1
+      type: string
+    - name: text_04
+      label: Paragraph 1
+      type: text
+    - name: text_05
+      label: Stat 2
+      type: string
+    - name: text_06
+      label: Stat label 2
+      type: string
+    - name: text_07
+      label: Paragraph 2
+      type: text
+    - name: text_08
+      label: Stat 3
+      type: string
+    - name: text_09
+      label: Stat label 3
+      type: string
+    - name: text_10
+      label: Paragraph 3
+      type: text
+    - name: text_11
+      label: Stat 4
+      type: string
+    - name: text_12
+      label: Stat label 4
+      type: string
+    - name: text_13
+      label: Paragraph 4
+      type: text
+    - name: text_14
+      label: Stat 5
+      type: string
+    - name: text_15
+      label: Stat label 5
+      type: string
+    - name: text_16
+      label: Paragraph 5
+      type: text
+    - name: text_17
+      label: Stat 6
+      type: string
+    - name: text_18
+      label: Stat label 6
+      type: string
+    - name: text_19
+      label: Paragraph 6
+      type: text
+  - name: section_05
+    label: 05 · Experience
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text
+      type: string
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Subheading 1
+      type: string
+    - name: text_05
+      label: Text 2
+      type: string
+    - name: text_06
+      label: Text 3
+      type: text
+    - name: text_07
+      label: Text 4
+      type: text
+    - name: text_08
+      label: Text 5
+      type: text
+    - name: text_09
+      label: Text 6
+      type: string
+    - name: text_10
+      label: Text 7
+      type: text
+    - name: text_11
+      label: Text 8
+      type: string
+    - name: text_12
+      label: Subheading 2
+      type: string
+    - name: text_13
+      label: Text 9
+      type: string
+    - name: text_14
+      label: Text 10
+      type: string
+    - name: text_15
+      label: Text 11
+      type: string
+    - name: text_16
+      label: Text 12
+      type: string
+    - name: text_17
+      label: Text 13
+      type: string
+    - name: text_18
+      label: Text 14
+      type: string
+    - name: text_19
+      label: Text 15
+      type: string
+    - name: text_20
+      label: Subheading 3
+      type: string
+    - name: text_21
+      label: Text 16
+      type: string
+    - name: text_22
+      label: Text 17
+      type: string
+    - name: text_23
+      label: Text 18
+      type: string
+    - name: text_24
+      label: Text 19
+      type: string
+    - name: text_25
+      label: Text 20
+      type: string
+    - name: text_26
+      label: Text 21
+      type: string
+    - name: text_27
+      label: Subheading 4
+      type: string
+    - name: text_28
+      label: Text 22
+      type: string
+    - name: text_29
+      label: Text 23
+      type: string
+    - name: text_30
+      label: Text 24
+      type: string
+    - name: text_31
+      label: Text 25
+      type: text
+    - name: text_32
+      label: Text 26
+      type: string
+    - name: text_33
+      label: Subheading 5
+      type: string
+    - name: text_34
+      label: Text 27
+      type: string
+    - name: text_35
+      label: Text 28
+      type: text
+    - name: text_36
+      label: Text 29
+      type: text
+    - name: text_37
+      label: Text 30
+      type: string
+    - name: text_38
+      label: Text 31
+      type: text
+    - name: text_39
+      label: Text 32
+      type: string
+    - name: text_40
+      label: Text 33
+      type: text
+  - name: section_06
+    label: 06 · Skills and tools
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Small label 1
+      type: string
+    - name: text_03
+      label: Tag 1
+      type: string
+    - name: text_04
+      label: Tag 2
+      type: string
+    - name: text_05
+      label: Tag 3
+      type: string
+    - name: text_06
+      label: Tag 4
+      type: string
+    - name: text_07
+      label: Tag 5
+      type: string
+    - name: text_08
+      label: Tag 6
+      type: string
+    - name: text_09
+      label: Small label 2
+      type: string
+    - name: text_10
+      label: Tag 7
+      type: string
+    - name: text_11
+      label: Tag 8
+      type: string
+    - name: text_12
+      label: Tag 9
+      type: string
+    - name: text_13
+      label: Tag 10
+      type: string
+    - name: text_14
+      label: Small label 3
+      type: string
+    - name: text_15
+      label: Tag 11
+      type: string
+    - name: text_16
+      label: Tag 12
+      type: string
+    - name: text_17
+      label: Tag 13
+      type: string
+    - name: text_18
+      label: Tag 14
+      type: string
+    - name: text_19
+      label: Small label 4
+      type: string
+    - name: text_20
+      label: Tag 15
+      type: string
+    - name: text_21
+      label: Tag 16
+      type: string
+    - name: text_22
+      label: Tag 17
+      type: string
+    - name: text_23
+      label: Tag 18
+      type: string
+    - name: text_24
+      label: Tag 19
+      type: string
+  - name: section_07
+    label: 07 · Education, industries, and tools
+    type: object
+    fields:
+    - name: text_01
+      label: Subheading 1
+      type: string
+    - name: text_02
+      label: Text 1
+      type: string
+    - name: text_03
+      label: Text 2
+      type: string
+    - name: text_04
+      label: Text 3
+      type: string
+    - name: text_05
+      label: Text 4
+      type: string
+    - name: text_06
+      label: Text 5
+      type: string
+    - name: text_07
+      label: Text 6
+      type: string
+    - name: text_08
+      label: Subheading 2
+      type: string
+    - name: text_09
+      label: Paragraph 1
+      type: text
+    - name: text_10
+      label: Subheading 3
+      type: string
+    - name: text_11
+      label: Paragraph 2
+      type: text
+  - name: section_08
+    label: 08 · Kind words
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Quote 1
+      type: text
+    - name: text_03
+      label: Caption 1
+      type: string
+    - name: text_04
+      label: Quote 2
+      type: text
+    - name: text_05
+      label: Caption 2
+      type: string
+    - name: text_06
+      label: Quote 3
+      type: text
+    - name: text_07
+      label: Caption 3
+      type: string
+    - name: text_08
+      label: Quote 4
+      type: text
+    - name: text_09
+      label: Caption 4
+      type: string
+    - name: text_10
+      label: Quote 5
+      type: string
+    - name: text_11
+      label: Caption 5
+      type: string
+    - name: text_12
+      label: Quote 6
+      type: text
+    - name: text_13
+      label: Caption 6
+      type: string
+    - name: text_14
+      label: Quote 7
+      type: string
+    - name: text_15
+      label: Caption 7
+      type: string
+    - name: text_16
+      label: Quote 8
+      type: text
+    - name: text_17
+      label: Caption 8
+      type: string
+  - name: section_09
+    label: 09 · Beyond work
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+  - name: section_10
+    label: 10 · Hiring for a senior role? Let's talk.
+    type: object
+    fields:
+    - name: text_01
+      label: Section heading
+      type: string
+    - name: text_02
+      label: Button or link text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_contact
+  label: Page · Contact
+  type: file
+  path: content/pages/contact.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Let's create something worthy of your brand.
+    type: object
+    fields:
+    - name: text_01
+      label: Page headline
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Text 1
+      type: string
+    - name: text_04
+      label: Text 2
+      type: string
+    - name: text_05
+      label: Text 3
+      type: string
+    - name: text_06
+      label: Text 4
+      type: string
+    - name: text_07
+      label: Form label 1
+      type: string
+    - name: text_08
+      label: Form label 2
+      type: string
+    - name: text_09
+      label: Form label 3
+      type: string
+    - name: text_10
+      label: Form label 4
+      type: string
+    - name: text_11
+      label: Form label 5
+      type: string
+    - name: text_12
+      label: Button text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_thanks
+  label: Page · Thank-you page
+  type: file
+  path: content/pages/thanks.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · Thanks for reaching out.
+    type: object
+    fields:
+    - name: text_01
+      label: Page headline
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: text
+    - name: text_03
+      label: Button or link text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: page_404
+  label: Page · Page not found
+  type: file
+  path: content/pages/404.json
+  format: json
+  fields:
+  - name: section_01
+    label: 01 · This page took a different path.
+    type: object
+    fields:
+    - name: text_01
+      label: Page headline
+      type: string
+    - name: text_02
+      label: Paragraph
+      type: string
+    - name: text_03
+      label: Button or link text
+      type: string
+  - name: seo
+    label: Search and sharing
+    type: object
+    fields:
+    - name: page_title
+      label: Browser tab and Google title
+      type: string
+    - name: description
+      label: Google and link-preview description
+      type: text
+- name: writing
+  label: Writing samples
+  type: file
+  path: content/writing.json
+  format: json
+  fields:
+  - name: samples
+    label: Samples (shown in this order)
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title} ({org})'
+    fields:
+    - name: type
+      label: Type (shown in the colored band, like Blog or White paper)
+      type: string
+    - name: org
+      label: Company
+      type: string
+    - name: title
+      label: Title
+      type: string
+    - name: description
+      label: One-line description
+      type: text
+    - name: link
+      label: Google Drive or Docs link
+      type: string
+- name: site
+  label: Contact details
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: email
+    label: Email address
+    type: string
+    description: Used everywhere your email appears, including where the contact form sends messages.
+  - name: linkedin
+    label: LinkedIn URL
+    type: string
+  - name: resume
+    label: Resume PDF
+    type: file
+    description: Every "Download resume" button links to this file.

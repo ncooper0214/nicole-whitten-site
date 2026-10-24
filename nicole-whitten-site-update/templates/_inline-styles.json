@@ -1,0 +1,269 @@
+{
+ "index/section_01/text_02": [
+  "<i style=\"color: #FFA987\">"
+ ],
+ "index/section_03/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "index/section_04/text_02": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "index/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "index/section_06/text_02": [
+  "<i style=\"color: #3C3489;\">"
+ ],
+ "index/section_08/text_01": [
+  "<i style=\"color: #FFA987\">"
+ ],
+ "work/section_01/text_02": [
+  "<i class=\"nw-sheen\" style=\"color: #FFA987;\">"
+ ],
+ "work/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_01/text_05": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-adoreal/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_07/text_02": [
+  "<i style=\"color: #3C3489;\">"
+ ],
+ "case-study-adoreal/section_08/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-adoreal/section_09/text_02": [
+  "<i style=\"color: #3C3489;\">"
+ ],
+ "case-study-adoreal/section_10/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_11/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_13/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-adoreal/section_14/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_01/text_05": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-human/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_06/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-human/section_07/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_09/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-human/section_10/text_02": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "case-study-human/section_11/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_01/text_04": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-meta/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_04/text_02": [
+  "<i>"
+ ],
+ "case-study-meta/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_07/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-meta/section_09/text_02": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "case-study-nielsen/section_01/text_04": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-nielsen/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-nielsen/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-nielsen/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-nielsen/section_07/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-nielsen/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-nielsen/section_09/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_01/text_05": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-xpo/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_07/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-xpo/section_09/text_02": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "case-study-xpo/section_10/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_01/text_05": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "case-study-baunfire/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_07/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "case-study-baunfire/section_10/text_02": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "case-study-baunfire/section_11/text_02": [
+  "<b style=\"font-weight: 600; color: #F3EEFF;\">"
+ ],
+ "case-study-baunfire/section_12/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "writing/section_01/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "writing/section_02/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "writing/section_02/text_03": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "writing/section_03/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "services/section_01/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "services/section_03/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "services/section_04/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "services/section_04/text_03": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "services/section_04/text_05": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "services/section_04/text_07": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "services/section_04/text_09": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "services/section_05/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "services/section_06/text_01": [
+  "<i style=\"color: #3C3489;\">"
+ ],
+ "blog/section_01/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "blog/section_03/text_01": [
+  "<i>"
+ ],
+ "about/section_01/text_02": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "about/section_03/text_01": [
+  "<i style=\"color: #3C3489;\">"
+ ],
+ "about/section_04/text_01": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "about/section_06/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "about/section_08/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "about/section_08/text_03": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "about/section_08/text_05": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "about/section_08/text_07": [
+  "<b style=\"font-weight: 600;\">"
+ ],
+ "about/section_08/text_09": [
+  "<b style=\"font-weight: 600; color: #F3EEFF;\">"
+ ],
+ "about/section_09/text_01": [
+  "<i style=\"color: #C3B5FF;\">"
+ ],
+ "about/section_10/text_01": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "contact/section_01/text_01": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "thanks/section_01/text_01": [
+  "<i style=\"color: #FFA987;\">"
+ ],
+ "404/section_01/text_01": [
+  "<i style=\"color: #FFA987;\">"
+ ]
+}
