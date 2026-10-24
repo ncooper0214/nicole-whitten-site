@@ -1,0 +1,101 @@
+media:
+  input: public/img
+  output: /img
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, category, date]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: "Wrap a word or phrase in *asterisks* to make it peach and italic, like: The edit is where *copy gets good*"
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [Copywriting, Editing, Content strategy, AI and automation, Leadership]
+      - name: date
+        label: Publish date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: intro
+        label: Intro line
+        type: text
+        description: One or two sentences shown under the title and on the blog card.
+      - name: image
+        label: Card image
+        type: image
+        description: Shown on the Blog page card (and as the featured image when this is your newest post).
+      - name: image_alt
+        label: Card image description
+        type: string
+        description: A short description of the image for screen readers.
+      - name: draft
+        label: Hide this post (draft)
+        type: boolean
+      - name: body
+        label: Post
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: writing
+    label: Writing samples
+    type: file
+    path: content/writing.json
+    format: json
+    fields:
+      - name: samples
+        label: Samples (shown in this order)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title} ({org})"
+        fields:
+          - name: type
+            label: Type (shown in the colored band, like Blog or White paper)
+            type: string
+          - name: org
+            label: Company
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: One-line description
+            type: text
+          - name: link
+            label: Google Drive or Docs link
+            type: string
+
+  - name: site
+    label: Contact details
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: email
+        label: Email address
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: resume
+        label: Resume PDF
+        type: file
+        description: Every "Download resume" button links to this file.
