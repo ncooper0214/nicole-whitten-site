@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Case studies from Adoreal, HUMAN Security, Meta, XPO, Nielsen, and Baunfire: the problem, the plan, and what changed.">
+<meta property="og:title" content="Work — Nicole Whitten">
+<meta property="og:description" content="Case studies from Adoreal, HUMAN Security, Meta, XPO, Nielsen, and Baunfire: the problem, the plan, and what changed.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/photo-original.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231E1A2E%22/%3E%3Ctext x=%2232%22 y=%2244%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2232%22 font-style=%22italic%22 fill=%22%23FFA987%22%3ENW%3C/text%3E%3C/svg%3E">
+
+<title>Work — Nicole Whitten</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1E1A2E}
+a{color:#F3EEFF;text-decoration:none}a:hover{color:#FFA987}
+
+@keyframes nw-up{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+@keyframes nw-blur{from{opacity:0;filter:blur(12px);translate:0 24px}to{opacity:1;filter:blur(0);translate:0 0}}
+@keyframes nw-wipe{from{clip-path:inset(0 100% 0 0 round 20px);opacity:.4}to{clip-path:inset(0 0 0 0 round 20px);opacity:1}}
+@keyframes nw-pop{from{opacity:0;scale:.86}to{opacity:1;scale:1}}
+@keyframes nw-side{from{opacity:0;translate:-40px 0}to{opacity:1;translate:0 0}}
+@keyframes nw-drift{from{translate:0 -28px}to{translate:0 28px}}
+@keyframes nw-track{from{letter-spacing:.35em;opacity:0}to{opacity:1}}
+@keyframes nw-grow{from{scale:0 1}to{scale:1 1}}
+@keyframes nw-draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes nw-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes nw-marquee{to{transform:translateX(-50%)}}
+.nw-hero>*{animation:nw-up .9s cubic-bezier(.2,.7,.2,1) both}
+.nw-hero>:nth-child(2){animation-delay:.12s}.nw-hero>:nth-child(3){animation-delay:.24s}.nw-hero>:nth-child(4){animation-delay:.36s}.nw-hero>:nth-child(5){animation-delay:.48s}.nw-hero>:nth-child(6){animation-delay:.6s}
+img.hero-art{animation:nw-draw 2.6s .4s cubic-bezier(.65,0,.35,1) both,nw-float 8s 3s ease-in-out infinite}
+.nw-card{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.nw-card:hover{transform:translateY(-6px)}
+.nw-card img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.nw-card:hover img{transform:scale(1.05)}
+a[style*="border-radius: 999px"]{transition:transform .3s cubic-bezier(.2,.7,.2,1),filter .3s}
+a[style*="border-radius: 999px"]:hover{transform:translateY(-2px);filter:brightness(1.08)}
+nav a{transition:color .25s}
+.nw-track{animation:nw-marquee 32s linear infinite}.nw-marquee:hover .nw-track{animation-play-state:paused}
+@supports (animation-timeline: view()){
+.nw-rv,section p,article p,section li,article li,blockquote,dl>div,footer>div>*{animation:nw-up linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+h2.nw-rv{animation-name:nw-blur;animation-range:entry 0% entry 55%}
+.nw-card.nw-rv{animation-name:nw-pop}
+section li{animation-name:nw-side}
+[style*="text-transform: uppercase"]{animation:nw-track linear both;animation-timeline:view();animation-range:entry 0% entry 50%}
+.nw-fig img{animation:nw-wipe linear both;animation-timeline:view();animation-range:entry 5% cover 45%}
+img[style*="height: 560px"]{animation:nw-drift linear both;animation-timeline:view();animation-range:cover}
+[style*="font-size: 32px; color: #FFA987"],[style*="font-size: 56px; color: #FFA987"],[style*="font-size: 64px; color: #FFA987"]{animation:nw-pop linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
+.nw-hero>*{animation-timeline:auto}
+}
+@supports (animation-timeline: scroll()){.nw-progress{position:fixed;z-index:60;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C3B5FF,#FFA987);transform-origin:0 50%;animation:nw-grow linear both;animation-timeline:scroll(root)}}
+@media (max-width:640px){
+h2[style*="font-size: 64px"]{font-size:44px!important}h2[style*="font-size: 56px"]{font-size:40px!important}h2[style*="font-size: 48px"]{font-size:36px!important}
+[style*="padding: 56px 48px"],[style*="padding: 64px 48px"],[style*="padding: 48px 40px"],[style*="padding: 40px 48px"],[style*="padding: 48px;"]{padding:32px 24px!important}
+header nav{gap:6px 16px!important;font-size:14px!important}
+.nw-fig{margin:16px 0!important}
+}
+@keyframes nw-sheen{from{background-position:150% 0}to{background-position:-50% 0}}
+@keyframes nw-zoom{from{scale:1.18}to{scale:1}}
+@keyframes nw-glow{0%,100%{box-shadow:0 0 0 0 rgba(255,169,135,.5)}55%{box-shadow:0 0 0 14px rgba(255,169,135,0)}}
+.nw-sheen{background:linear-gradient(100deg,#FFA987 35%,#FFE4D8 50%,#FFA987 65%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;animation:nw-sheen 5s 1.4s ease-in-out infinite;padding-right:.08em}
+.nw-pills button{animation:nw-up .7s cubic-bezier(.2,.7,.2,1) both;transition:transform .25s,background-color .25s,color .25s,border-color .25s}
+.nw-pills button:nth-of-type(1),.nw-pills > :nth-child(1) button{animation-delay:.45s}
+.nw-pills > :nth-child(2),.nw-pills > :nth-child(2) button{animation-delay:.55s}
+.nw-pills > :nth-child(3),.nw-pills > :nth-child(3) button{animation-delay:.65s}
+.nw-pills > :nth-child(4),.nw-pills > :nth-child(4) button{animation-delay:.75s}
+.nw-pills > :nth-child(5),.nw-pills > :nth-child(5) button{animation-delay:.85s}
+.nw-pills button:hover{transform:translateY(-2px)}
+.nw-grid .nw-card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.nw-grid .nw-card:hover{box-shadow:0 22px 60px -24px rgba(195,181,255,.55)}
+.nw-cta a:first-of-type{animation:nw-glow 2.8s 1s ease-in-out infinite}
+@supports (animation-timeline: view()){
+.nw-grid .nw-card:nth-child(3n+2){animation-range:entry 10% entry 55%}
+.nw-grid .nw-card:nth-child(3n){animation-range:entry 20% entry 65%}
+.nw-grid .nw-card img{animation:nw-zoom linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<div style="background: #1E1A2E; color: #F3EEFF; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh;">
+
+<header id="top" style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="index.html" style="font-family: 'Instrument Serif', serif; font-size: 28px; line-height: 1; color: #F3EEFF;">Nicole <i style="color: #FFA987">Whitten</i><span style="color: #C3B5FF;">, MBA, MA</span></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px;">
+<a href="work.html" aria-current="page" style="color: #C3B5FF; text-decoration: underline; text-underline-offset: 6px;">Work</a>
+<a href="writing.html">Writing</a>
+<a href="services.html">Services</a>
+<a href="blog.html">Blog</a>
+<a href="about.html">About</a>
+<a href="contact.html" style="padding: 10px 20px; border-radius: 999px; border: 1px solid #4A4266; color: #F3EEFF;">Get in touch</a>
+</nav>
+</header>
+
+<section class="nw-hero" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 48px; display: flex; flex-direction: column; gap: 20px;">
+<div style="font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: #C3B5FF;">Case studies</div>
+<h1 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(56px, 7vw, 96px); line-height: 1;">Work that <i class="nw-sheen" style="color: #FFA987;">changed the numbers</i></h1>
+<p style="margin: 0; max-width: 640px; font-size: 19px; color: #B7AECB;">Each project shows the problem, the plan, and what changed because of it.</p>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px;">
+<div class="nw-pills" role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+<button type="button" aria-pressed="true" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: #C3B5FF; color: #1E1A2E; border: 1px solid #C3B5FF;">All</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">Copywriting</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">Editing</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">Content strategy</button>
+
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #F3EEFF; border: 1px solid #4A4266;">Leadership</button>
+
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 112px;">
+<div class="nw-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+
+<a href="case-study-adoreal.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/adoreal-duotone.jpg" alt="Adoreal logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Leadership</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2025 – Present</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">Leading marketing at Adoreal</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">Strategy, a global team, and automations for every channel, in service of plastic surgery practices.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">20+</span><span style="font-size: 13px; color: #9A90B8;">Team members</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Head of Marketing</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+<a href="case-study-human.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/human-duotone.jpg" alt="HUMAN Security logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Copywriting</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2023 – 2025</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">A new voice for HUMAN Security</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">Content strategy and multiple pages of website copy for a full brand and site overhaul, through Baunfire.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">Launched</span><span style="font-size: 13px; color: #9A90B8;">New site and voice</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Content Strategy Director, Baunfire</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+<a href="case-study-meta.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/meta-logo-duotone.jpg" alt="Meta logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Editing</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2022 – 2023</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">Meta for Business</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">An audit and redesign of web content for small and medium-sized businesses worldwide.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">+35%</span><span style="font-size: 13px; color: #9A90B8;">Engagement</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Lead, Content Strategy</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+<a href="case-study-xpo.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/xpo-duotone.jpg" alt="XPO Logistics logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Copywriting</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2019 – 2021</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">Proposals that close at XPO</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">Tailored, industry-specific proposal copy, RFP responses, and State of the Industry reports.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">+22%</span><span style="font-size: 13px; color: #9A90B8;">Close rate</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Manager, Content</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+<a href="case-study-nielsen.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/nielsen-duotone.jpg" alt="Nielsen logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Content strategy</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2021 – 2022</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">Long-form that ranks and sells</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">In-depth guides and reports built for search visibility and the sales conversation.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">+30%</span><span style="font-size: 13px; color: #9A90B8;">Organic traffic</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Senior Content Manager</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+<a href="case-study-baunfire.html" class="nw-card nw-rv" style="display: flex; flex-direction: column; border-radius: 20px; background: #29233D; overflow: hidden; color: #F3EEFF;">
+<img src="img/baunfire-duotone.jpg" alt="Baunfire logo" style="display: block; width: 100%; height: 220px; object-fit: cover;">
+
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">Leadership</span>
+<span style="font-size: 12px; padding: 4px 12px; border-radius: 999px; background: #3A3354; color: #D9D0FF;">2023 – 2025</span>
+</div>
+<div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1;">A content department from zero</div>
+<p style="margin: 0; color: #B7AECB; font-size: 15px; line-height: 1.6;">Built, edited, and led a writing and strategy team that became a new line of revenue.</p>
+<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #3A3354; display: flex; gap: 24px; align-items: flex-start;">
+<div style="flex: none; display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; color: #FFA987;">$500K+</span><span style="font-size: 13px; color: #9A90B8;">New revenue</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45;"><span style="color: #9A90B8;">My role</span><span>Director, Marketing, Content Strategy and Copywriting</span></div>
+</div>
+<span style="font-size: 15px; color: #C3B5FF;">Read case study →</span>
+</div>
+</a>
+
+</div>
+</section>
+
+<section class="nw-cta" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; border-top: 1px solid #332C4A;">
+<h2 class="nw-rv" style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 56px; line-height: 1.02; max-width: 680px;">Want the full story behind a project? <i style="color: #C3B5FF;">Let's talk.</i></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a href="contact.html" style="padding: 14px 26px; border-radius: 999px; background: #FFA987; color: #3A1608; font-weight: 600; font-size: 16px;">Get in touch</a>
+<a href="about.html" style="padding: 14px 26px; border-radius: 999px; border: 1px solid #4A4266; color: #F3EEFF; font-size: 16px;">View experience</a>
+</div>
+</section>
+
+<footer style="background: #17142A; border-top: 1px solid #332C4A;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #9A90B8;">
+<a href="index.html" style="font-family: 'Instrument Serif', serif; font-size: 26px; color: #F3EEFF;">Nicole <i style="color: #FFA987">Whitten</i><span style="color: #C3B5FF;">, MBA, MA</span></a>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px;">
+<a href="work.html" style="color: #B7AECB;">Work</a>
+<a href="writing.html" style="color: #B7AECB;">Writing</a>
+<a href="services.html" style="color: #B7AECB;">Services</a>
+<a href="blog.html" style="color: #B7AECB;">Blog</a>
+<a href="about.html" style="color: #B7AECB;">About</a>
+<a href="contact.html" style="color: #B7AECB;">Contact</a>
+</nav>
+<span>© 2026 Nicole Whitten</span>
+</div>
+</footer>
+
+</div>
+
+
+
+
+<script>
+document.querySelectorAll('[role="group"][aria-label^="Filter"]').forEach(function(g){
+  var btns=[].slice.call(g.querySelectorAll('button'));
+  var sec=g.closest('section'); var next=sec&&sec.nextElementSibling; var grid=next&&next.querySelector('div');
+  if(!grid)return;
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    var label=b.textContent.trim();
+    btns.forEach(function(x){var on=x===b;x.setAttribute('aria-pressed',on?'true':'false');x.style.background=on?'#C3B5FF':'transparent';x.style.color=on?'#1E1A2E':'#F3EEFF';x.style.borderColor=on?'#C3B5FF':'#4A4266';});
+    [].slice.call(grid.children).forEach(function(c){
+      var tags=[].slice.call(c.querySelectorAll('span')).map(function(s){return s.textContent.trim();});
+      c.style.display=(label==='All'||tags.indexOf(label)>-1)?'':'none';
+    });
+  });});
+});
+</script>
+</body></html>
